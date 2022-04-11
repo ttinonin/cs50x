@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+
+{%block main%}
+<h1>Symbol</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% if confere %}
+      <tr>
+        <th>{{ confere.symbol }}</th>
+        <td>{{ confere.name }}</td>
+        <td>{{ "$%.2f"|format(confere.price) }}</td>
+      </tr>
+    {% endif %}
+    </tbody>
+  </table>
+{%endblock%}

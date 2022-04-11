@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+
+{%block main%}
+<h1>Your stocks:</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in lista %}
+      <tr>
+        <th>{{ i["symbol"] }}</th>
+        <td>{{ i["shares"]}}</td>
+        <!--<td>{{ "$%.2f"|format(i["price"]) }}</td>-->
+      </tr>
+    {% endfor %}
+    <tr>
+      <td>Account Balance:</td>
+      <td> </td>
+      <th>{{ "$%.2f"|format(cc.cash) }}</th>
+    </tr>
+    </tbody>
+  </table>
+{%endblock%}

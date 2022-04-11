@@ -1,0 +1,12 @@
+{%extends "layouts.html"%}
+
+{%block body%}
+<h1>Nome</h1>
+<form method="post" action="/home">
+    <input type="text" placeholder="Name" autocomplete="off" name="gta5">
+    {%for i in sports%}
+        <input name="sport" type="checkbox" value="{{i}}">{{i}}
+    {%endfor%}
+    <input type="submit">
+</form>
+{%endblock%}

@@ -1,0 +1,9 @@
+{%extends "layouts.html"%}
+
+{%block body%}
+{%if session["name"]%}
+Your're logged as: {{session["name"]}}
+{%else%}
+You're not logged
+{%endif%}
+{%endblock%}

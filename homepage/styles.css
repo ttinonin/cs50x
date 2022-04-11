@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+
+.header{
+    box-shadow: 0 1px 10px black;
+    position: relative;
+    width: 100%;
+
+}
+
+
+p{
+    text-align: center;
+}
+.img1{
+    width: 204px;
+    height: 300px;
+}
+
+.list-group a{
+    text-decoration: none;
+}
+
+.indices{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.covers{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.corpo{
+    background-color: rgb(249, 255, 163);
+    /*box-shadow: 8px 8px 30px black;*/
+    width: 80%;
+    margin: -15px auto 0px auto;
+    border-radius: 0 0 10px 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.indices li{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+    padding: 20px;
+    cursor:pointer;
+}
+
+.indices li:hover{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.indices a{
+    display: table-cell;
+    text-decoration: none;
+}
+
+.perfil{
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25pt;
+    margin-left: auto;
+}
+
+@media (max-width:420px) {
+    .header{
+        font-size: 10pt;
+    }
+}

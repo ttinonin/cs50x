@@ -1,0 +1,15 @@
+{%extends "layout.html"%}
+
+{%block main%}
+<form action="/buy" method="post">
+    <h1>What stock do you wanna buy today?</h1>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="symbol" placeholder="stock’s symbol" type="text">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="shares" placeholder="shares" type="text">
+    </div>
+    <input type="hidden" name="id" value="{{identificador}}">
+    <button class="btn btn-primary" type="submit">Buy!</button>
+</form>
+{%endblock%}

@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: Because the file organizes the lowest number to the highest, in a very slow way
+
+sort2 uses: merge sort
+
+How do you know?: Because the file organizes the lowest to the highest number in a much faster way
+
+sort3 uses: selection sort
+
+How do you know?: Because the program organize the numbers in a intermediate speed
